@@ -1,80 +1,31 @@
-\# Chef-to-Coder Recipe Converter
+# Arcade Shooter Prototype
 
+A bite-sized browser game prototype to help you take the first steps toward building an arcade-style shooter. Steer a pilot through a vertical battlefield, blast incoming drones, and chase a high score with escalating difficulty.
 
+## 🎮 Gameplay
 
-A simple, beginner-friendly web app that converts traditional recipe instructions into simplified, step-by-step directions—perfect for coders, minimalists, or anyone who hates reading a wall of text while cooking.
+- Move with **WASD** or the **arrow keys**
+- Press **space** to fire energy bolts
+- Survive as long as you can while drones swoop in faster every wave
+- Lose three lives and the simulation ends—hit **Play Again** to dive back in
 
+## 🧠 Features & Concepts
 
+- HTML5 `<canvas>` rendering with a custom draw loop
+- Basic entity system for the player, projectiles, and enemies
+- Collision detection and score keeping
+- Difficulty scaling over time and simple game-over handling
 
-\## 🚀 Why I Built It
+## 🚀 Getting Started
 
+1. Open `index.html` in your browser (no build tooling required)
+2. Play immediately—everything runs in vanilla JavaScript
 
+## 🛠️ Next Ideas
 
-As a professional chef making the leap into tech, I wanted to create something that reflects both worlds. This app shows how logic and structure from coding can be applied to everyday tasks—like turning a messy recipe into clean, digestible steps.
+- Add sound effects and particle bursts for extra juice
+- Track a high-score leaderboard in `localStorage`
+- Introduce different enemy types or power-ups
+- Port the prototype into your favorite framework or engine once you're ready
 
-
-
-\## 🛠️ How It Works
-
-
-
-1\. Paste any recipe instructions into the text box.
-
-2\. Click \*\*Convert It\*\*.
-
-3\. The app will display a cleaner, numbered version of the steps.
-
-
-
-\## 🧠 Tech Used
-
-
-
-\- HTML5
-
-\- CSS3
-
-\- JavaScript (vanilla, no frameworks)
-
-
-
-\## 💡 What I Learned
-
-
-
-\- Connecting HTML, CSS, and JavaScript into a working frontend app
-
-\- DOM manipulation and event handling
-
-\- Creating clean, readable user interfaces
-
-\- Naming files and folder structures properly 😤
-
-
-
-\## 📸 Screenshot
-
-
-
-\*(Add a screenshot of your app here if you’d like. I can help you take one and upload it if needed.)\*
-
-
-
-\## ✅ What's Next
-
-
-
-\- Add the ability to save or export the cleaned-up recipe
-
-\- Convert measurement units automatically (future update)
-
-\- Make it mobile responsive
-
-
-
----
-
-
-
-
-
+Have fun experimenting and tweaking the rules to make the shooter your own!

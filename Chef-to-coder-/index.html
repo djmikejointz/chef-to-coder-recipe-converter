@@ -3,18 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chef-to-Coder Recipe Converter</title>
+  <title>Arcade Shooter Prototype</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Chef-to-Coder Recipe Converter</h1>
-    <p>Paste your traditional recipe below and get a simplified version, ready for coding minds or quick builds.</p>
-    <textarea id="inputRecipe" placeholder="Paste your recipe here..."></textarea>
-    <button id="convertBtn">Convert It</button>
-    <h2>Converted Recipe:</h2>
-    <pre id="outputRecipe"></pre>
+  <main class="game-wrapper">
+    <section class="hud" aria-live="polite">
+      <h1>Arcade Shooter Prototype</h1>
+      <p class="instructions">Move with WASD or the arrow keys. Press space to fire.</p>
+      <div class="stats">
+        <span>Score: <span id="score">0</span></span>
+        <span>Lives: <span id="lives">3</span></span>
+      </div>
+    </section>
+    <canvas
+      id="gameCanvas"
+      width="480"
+      height="640"
+      role="img"
+      aria-label="Simple arcade shooter game where a pilot defends against drones"
+    ></canvas>
+  </main>
+
+  <div class="overlay" id="gameOverOverlay" hidden>
+    <div class="overlay-content">
+      <h2>Game Over</h2>
+      <p>You stopped <span id="finalScore">0</span> drones.</p>
+      <button id="playAgainBtn" type="button">Play Again</button>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
